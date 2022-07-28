@@ -1,0 +1,40 @@
+
+#include<stdio.h>
+
+
+
+typedef struct Stu
+{
+	char name[29];
+	short age;
+	char tele[20];
+
+}Stu;
+
+void print1(Stu tmp)
+{
+	printf("name = %s\n", tmp.name);
+	printf("age = %d\n", tmp.age);
+	printf("tele = %s\n", tmp.tele);
+
+}
+
+//结构体指针
+void print2(Stu* ps)
+{
+	printf("name = %s\n", ps->name);  //结构体指针->结构体成员
+	printf("age = %d\n", ps->age);
+	printf("tele = %s\n", ps->tele);
+
+
+}
+int main()
+{
+	Stu s1 = { "Frank",20,"13355669977" };
+	//传值 需要开辟空间来存零时拷贝
+	print1(s1);
+	//传址 打印的话更优 不用开辟空间来存临时拷贝
+	print2(&s1);
+
+	return 0;
+}
