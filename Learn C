@@ -2,6 +2,106 @@
 #include<stdio.h>
 
 
+
+
+
+// .c文件通关编译变为可执行文件  .exe
+//debug 文件 即调试软件 的调试可执行文件 包含了调试信息
+//release文件不会包含可调试形象，因此会比debug文件要小
+
+
+
+
+int main()
+{
+	int i = 10;
+	for (i = 10; i < 20; i++)
+	{
+		printf("%d  ", i);
+	}
+	system("pause"); //使得直接使用debug文件时，cmd可以停留在桌面#inuclude<stdlib.h>
+	return 0;
+}
+
+
+
+
+
+
+
+//typedef struct Stu
+//{
+//	char name[20];
+//	char tele[12];
+//	short age;
+//	char sex[8];
+//}Stu;
+// 
+//void print2(Stu tmp) 传值  会导致压栈 在时间和空间上都逊色与传址
+//{
+//	printf("name : %s\n", tmp.name);
+//	printf("tele : %s\n", tmp.tele);
+//	printf("age  : %d\n", tmp.age);
+//	printf("sex  : %s\n", tmp.sex);
+//	
+//}
+//void print1(Stu* tmp)   传址  不会压栈 节省计算机资源 
+//{
+//	printf("name : %s\n", tmp->name);
+//	printf("tele : %s\n", tmp->tele);
+//	printf("age  : %d\n", tmp->age);
+//	printf("sex  : %s\n", tmp->sex);
+//	printf("\n");
+//}
+//
+//int main()
+//{
+//	Stu s1 = {"Frank","13552868009",20,"male"};
+//
+//	print1(&s1);//传址最佳
+//	print2(s1); //传值次之
+//
+//	return 0;
+//}
+
+
+
+
+//struct S
+//{
+//	int a;
+//	char arr[20];
+//	double f;
+//};
+//
+//struct T
+//{
+//	char ch[10];
+//	struct S s;
+//	char* p;
+//};
+//
+//int main()
+//{
+//	char arr[20] = "fuck you up";
+//	struct T t = { "frank",{66,"hello",3.14},arr };
+//
+//	printf("%s\n", t.ch);
+//	printf("%lf\n", t.s.f);
+//	printf("%s\n", t.p);
+//
+//	return 0;
+//}
+//
+
+
+
+
+
+
+
+
+/////////////////////////
 #pragma once
 
 #define ROW 3
