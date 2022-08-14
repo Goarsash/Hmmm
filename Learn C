@@ -9,8 +9,6 @@
 //	//64位的指针变量为 8个字节  32位为4个字节
 //	//因为此处arr的元素为int类型 及占据4个字节 故此处为8/4=2
 //	printf("size = %d\n",sz);
-//
-//
 //}
 //
 //int main(void)
@@ -25,7 +23,7 @@
 
 //int main(void)
 //{
-//	char arr[] = "qweqwr";
+//	char arr[] = "qweqwr";常量数组
 //
 //	char* pc=arr;
 //	printf("%s\n", arr);
@@ -52,7 +50,7 @@ int main(void)
 //	unsigned int i;
 //	for (i = 9; i >= 0; i--)
 //	{
-//		printf("%u\n", i); 9 8 7 6 5 4 3 2 1 0 Unisgned int_max ---  无限循环
+//		printf("%u\n", i); 9 8 7 6 5 4 3 2 1 0 Unisgned_int_max ---  无限循环
 //		Sleep(100);
 //	}
 //	return 0;
@@ -76,19 +74,19 @@ int main(void)
 //{
 //	unsigned char i = 0;
 //	int count = 0;
-//	//unsigned char :[0,255] always true
-//	for (i = 0; i <= 255; i++)//loop 225+1=0
+//	//unsigned char :[0,255]                   always true
+//	for (i = 0; i <= 255; i++)//               loop 225+1=0
 //	{
 //		printf("duck duck\n");
 //		count++;
 //	}
-//	printf("%d\n", count);//256
+//	printf("%d\n", count);
 //	return 0;
 //}
 int main()
 {
 
-（-1)^S*M*2^E
+（-1)^S*M*2^E 浮点形数据在内存中的存储规则
 	//float type store
 	//v=(-1)^S*M*2^E   
 	//S--- V正数S=0；V负数S=1
@@ -130,7 +128,7 @@ int main()
 //int main()
 //{
 //	float f = 5.5;//0X40b00000
-//	//00 00 b0 40  小端存储
+//	//00 00 b0 40  小端存储  两个两个一拿
 //
 //
 //	return 0;
