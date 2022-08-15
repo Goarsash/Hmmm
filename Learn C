@@ -2,6 +2,111 @@
 #include<stdio.h>
 
 
+//一维  数组传参和指针数组传参
+
+//数组
+//void test1(int arr1[]);
+//void test1(int* arr);
+//void test1(int arr[10]);
+////指针数组
+//void test2(int* arr2[20]);
+//void test2(int* arr2[]);
+//void test2(int** arr2);
+//
+//
+//
+//int main(void)
+//{
+//	int arr1[10] = { 0 };
+//	int* arr2[20] = { 0 };
+//
+//	test1(arr1);
+//	test2(arr2);
+//
+//
+//	return 0;
+//}
+
+//二维数组传参
+//void test(int arr[3][5])//直接用数组来接收
+//{} 
+//void test(int arr[][5])//行可以省略，列不能省略
+//{}
+//void test(int (*p)[5])//用数组指针接收  （*p）表示是一个指针，指向的是第1行的地址 [5]表示每一行对应多少元素  int 表示对应的元素是int类型
+//{}
+//
+//int main(void)
+//{
+//	int arr1[3][5] = { 0 };
+//
+//	test(arr1);//此处的arr1代表首元素地址，但arr1是一个二维数组 故此时的首元素的地址是第一行的地址
+//
+//	return 0;
+//}
+
+//void test(int* p);//一级指针传参 用指针接收
+//void test2(int* p1);
+//int main(void)
+//{
+//	int arr[10] = { 0 };
+//	int* p = arr;
+//	test(p);
+//
+//
+//	test2();//此处可以放变量地址，一维数组名，指针
+//	return 0;
+//}
+
+//void test(int** p)//传参二级指针 用二级指针来接收
+//{}
+//
+//int main(void)
+//{
+//	int a = 10;
+//	int* p = &a;
+//	int** pp = &p;
+//	int* arr[10];
+//	test(pp);//二级指针本身
+//	test(&p);//一级指针的地址
+//	test(arr);//指针数组的数组名
+//
+//	return 0;
+//}
+
+//数组指针  指向数组的指针
+//函数指针  指向函数的指针
+
+
+//int ADD(int x, int y)
+//{
+//	return x + y;
+//}
+//int main(void)
+//{
+//	int a = 10;
+//	int b = 20;
+//	//printf("%d\n",ADD(a,b));
+//
+//	//在函数指针中 &ADD=ADD 都是函数的地址
+//	printf("%p\n", &ADD);//函数地址
+//	printf("%p\n", ADD);
+//
+//	int (*pa)(int,int) = ADD;//函数指针
+//
+//	printf("%d\n", (*pa)(2, 3));//（*pa）是找到ADD函数（2，3）进行传参 相当于 ADD(2,3)
+//	return 0;
+//}
+void Print(char* str)
+{
+	printf("%s", str);
+}
+
+int main(void)
+{
+	void(*p)(char*) = Print;//(*p)必须要加括号 否则p就会先与后面的括号结合 导致整体是一个函数声明
+	(*p)("adasdasf");
+	return 0;
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //int main(void)
 //{
