@@ -2,6 +2,124 @@
 
 #include<stdio.h>
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//int main(void)
+//{
+//	printf("hello\n");
+//
+//	return 0;
+//}ik
+//int main(void)
+//{
+//	double p = 1.0, r = 0.07;;
+//	int n = 0;
+//	while (n < 10)
+//	{
+//		p = p * (1 + r);
+//		n++;
+//
+//	}
+//	printf("increase %.3f times\n", p);
+//	return 0;
+//}
+//int main(void)
+//{
+//	double p, r=0.07;
+//	int n = 10;
+//	p = pow(1 + r, n);
+//	printf("p = %f\n", p);
+//	return 0;
+//}
+
+//void menu(void)
+//{
+//	putchar('\n');
+//	printf("*** 1 directly 5 years        ***\n");
+//	printf("*** 2 2year first than 3      ***\n");
+//	printf("****3 3year first than 2      ***\n");
+//	printf("****4 one by one for 5year    ***\n");
+//	printf("****5   live saving           ***\n");
+//	putchar('\n');
+//}
+//
+//int main(void)
+//{
+//	int input = 0,n=0;
+//	double p = 1000.0, r = 0.0;
+//	printf("we have five different choice for saving money: \n");
+//	do
+//	{
+//		menu();
+//		printf("what is your choice?:");
+//		scanf("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			n = 5;
+//			r = 0.03;
+//			p = 1000 * (1 + n * r);
+//			break;
+//		case 2:
+//			n = 2;
+//			r = 0.021;
+//			p = 1000 * (1 + n * r);
+//			n = 3;
+//			r = 0.0275;
+//			p = p * (1 + n * r);
+//			break;
+//		case 3:
+//			n = 3;
+//			r = 0.0275;
+//			p = 1000 * (1 + n * r);
+//			n = 2;
+//			r = 0.021;
+//			p = p * (1 + n * r);
+//			break;
+//		case 4:
+//			n = 5; r = 0.015;
+//			p = 1000 * pow(1 + r, n);
+//			break;
+//		case 5:
+//			n = 5; r = 0.0035;
+//			p = 1000 * pow((1 + r / 4), 4 * n);
+//			break;
+//		default:
+//			printf("wrong answer \n");
+//		}
+//		printf("after 5 years , 1000 is %.2f now!\n", p);
+//
+//
+//	} while (input);
+//	return 0;
+//}
+int main(void)
+{
+	/*double d = 0.0, p = 0,r = 0.0;
+	float m = 0, n = 0;;
+
+	printf("how much did you get from the fucking bank : ");
+	scanf("%f", &d);
+	
+	putchar('\n');
+	printf("how much did you want  to pay each month : ");
+	scanf("%f", &p);
+	putchar('\n');
+	printf("how about interest rate : ");
+	scanf("%f", &r);
+	putchar('\n');
+	m = log10(p / (p - d * r))/ log10(1 + r);
+	*/
+	double a = 8.2;
+	double s = log2(a);
+	printf("s = %f", s);
+
+
+
+
+	/*printf("you probably need %6.1f to pay back your debt!\n", m);*/
+	return 0;
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //int main(void)
 //{
