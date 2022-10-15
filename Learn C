@@ -2,6 +2,178 @@
 
 #include<stdio.h>
 
+//int main(void)
+//{
+//
+//	printf("dsds");
+//	return 0;
+//}
+//int main(void)
+//{
+//	int a = 10;
+//	int b = log10(a);
+//	int c = pow(a, 2);
+//	printf("b = %d c =%d\n", b, c);
+//
+//	return 0;
+//}
+//int main(void)
+//{
+//	int a, b;
+//	float x,y;
+//	char c1, c2;
+//	/*scanf("a=%db=%d", &a, &b);
+//	printf("a=%d\t b=%d\n",a,b);*/
+//	scanf("%f%e", &a, &y);
+//	
+//	printf("a=%d\ty=%e\n", a, y);//输入完71.82后应当直接输入Aa中间不能有空格 因为A为字符而非数字系统在独到A后自动判定给Y的值已结束
+//	putchar('\n');
+//
+//	scanf("%c%c", &c1, &c2);
+//	printf("c1=%c \tc2=%c\n",c1,c2);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//	return 0;
+//}
+//int main(void)
+//{
+//	char c1 = 'C', c2 = 'h', c3 = 'i', c4 = 'n', c5 = 'a';
+//	int a = 4;
+//	putchar(c1 + a); putchar(c2 + a); putchar(c3 + a); putchar(c4 + a); putchar(c5 + a);
+//	putchar('\n');
+//	printf("%c%c%c%c%c\n", c1 + a, c2 + a, c3 + a, c4 + a, c5 + a);
+//
+//	return 0;
+//}
+// 
+//                                                           加密
+//int main(void)
+//{
+//	int input = 1;
+//	char c = 0;
+//	int i = 0;
+//	char arr[10] = {0 };
+//	int n = 0;
+//	while (input)
+//	{
+//		scanf("%c", &c);
+//		getchar();
+//		if (c != '0')
+//		{
+//			arr[i] = c;
+//			i++;
+//		}
+//		else
+//			input = 0;
+//	}
+//	for (n = 0; n < i; n++)
+//	{
+//		printf("%c", arr[n] + 4);
+//	}
+//	return 0;
+//}
+
+                                                         //解码
+//int main(void)
+//{
+//	int input = 1;
+//	char c = 0;
+//	int i = 0;
+//	char arr[] = { 0 };
+//	int n = 0;
+//	while (input)
+//	{
+//		scanf("%c", &c);
+//		getchar();
+//		if (c != '0')
+//		{
+//			arr[i] = c;
+//			i++;
+//		}
+//		else
+//			input = 0;
+//	}
+//	for (n = 0; n < i; n++)
+//	{
+//		printf("%c", arr[n] - 4);
+//	}
+//	return 0;
+//}
+//
+//#define PI 3.1415
+//int main(void)
+//{
+//    double C, S, Bs, Bv, Zv, r;
+//    int h = 3;
+//    r = 1.5;
+//    C = PI * 2 * r;
+//    S = PI * r * r;
+//    Bs = 4.0 * PI * r * r;
+//    Bv = 4.0/3.0 * PI*r*r*r ;
+//    Zv = PI*r*r*h;
+//    printf("perometer=%.2f\narea=%.2f\nsurface area of sphere=%.2f\nVolume of a sphere=%.2f\nVolume of a cylindrical=%.2f\n", C, S, Bs, Bv, Zv);
+//
+//int main(void)
+//{
+//    printf("%d\n", INT_MAX);
+//    printf("%d\n", INT_MIN);
+//
+//
+//    return 0;
+//}
+//int main(void)
+//{
+//    int a, b, c, max;
+//    scanf("%d  %d  %d", &a, &b, &c);
+//    if (a > b && a > c)
+//        max = a;
+//    if (b > a && b > c)
+//        max = b;
+//    else
+//        max = c;
+//    printf("max = %d\n", max);
+//
+//    return 0;
+//}
+
+//int main(void)
+//{
+//    int flag = 1;
+//    int num=0;
+//    do
+//    {
+//        scanf("%d", &num);
+//        if (num < 1000 && num>0)
+//        {
+//            /*int tem = sqrt(num);*/
+//            printf("%d", sqrt(num));//sqrt()求平方根  返回类型为double 需要用%f来接收
+//            flag = 0;
+//        }
+//        else
+//        {
+//            printf("wrong answer,enter again\n");
+//        }
+//    
+//    
+//    } while (flag);
+//
+//    return 0;
+//}
+
+int main(void)
+{
+    int num = 9.0;
+    printf("%d\n", sqrt(num));
+
+    return 0;
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //int main(void)
