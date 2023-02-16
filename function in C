@@ -1,0 +1,59 @@
+//Bubble sort 
+int main(void)
+{
+	
+	int arr[]={NULL};
+	int i, j;
+	int tmp = 0;
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int lim = sz - 1;
+	if (lim == 0 || lim ==NULL )
+	{
+		printf("according to the number of the factor,you don't have to sort it\n");
+		return 0;
+	}
+	for(i=0;i<=lim;i++)
+		for (j = 0; j <= lim - 1 - i; j++,tmp=0)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				tmp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = tmp;
+			}
+		}
+	for (i = 0; i <= lim; i++)
+	{
+		printf("%d  ",arr[i]);
+	}
+	return 0;
+ }
+ 
+ 
+ //Selection Sort
+ void SelectionSort(int arr[], int sz)
+{
+	if (sz == 0 || sz < 1)
+	{
+		printf("actually you do not need to sort it\n");
+		return;
+	}
+	int i = 0;
+	int j = 1;
+	int tmp = 0;
+	Print(arr,sz);
+	for (i = 0; i <= sz; i++, j = 1)
+	{
+		while (j <= sz - i)
+		{
+			if (arr[i] > arr[i + j])
+			{
+				tmp = arr[i];
+				arr[i] = arr[i + j];
+				arr[i + j] = tmp;
+			}
+			j++;
+		}	
+	}
+	Print(arr,sz);
+}
