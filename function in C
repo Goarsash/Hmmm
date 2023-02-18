@@ -57,3 +57,23 @@ int main(void)
 	}
 	Print(arr,sz);
 }
+
+
+//InsertSort
+
+	for (end = 1; end <sz; end++)
+	{
+		int Newaddress = end;
+
+		//if Newaddress is stable,then the compare only work once
+	
+		while (Newaddress-- >= 0 && arr[Newaddress - 1] > arr[Newaddress])
+		{
+			tmp = arr[Newaddress];
+			arr[Newaddress] = arr[Newaddress - 1];
+			arr[Newaddress - 1] = tmp;
+			tmp = 0;
+		}
+	}
+	for (i = 0; i <= lim; i++)
+		printf("%d ", arr[i]);
