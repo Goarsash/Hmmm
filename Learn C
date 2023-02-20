@@ -1,7 +1,41 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////'
+动态顺序表
 #include<stdio.h>
+#define InitSize 10
+typedef struct {
+	int* data;
+	int lenght;
+	int MaxSize;
+}Seqlist;
 
+void InitList(Seqlist* L)
+{
+	L->data = (int*)malloc(InitSize * (sizeof(int)));
+	L->lenght = 0;
+	L->MaxSize = InitSize;
+}
+
+void IncreaseList(Seqlist* L, int sz)
+{
+	int i = 0;
+	int* p = L->data;
+	L->data = (int*)malloc((sz + L->MaxSize) * sizeof(int));
+
+	for (i = 0; i < L->lenght; i++)
+	{
+		L->data[i] = p[i];
+	}
+	free(p);
+}
+
+int main(void)
+{
+	Seqlist L;
+	InitList(&L);
+	IncreaseList(&L, 5);
+	return 0;
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //int main(void)
